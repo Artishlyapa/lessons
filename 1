@@ -1,0 +1,63 @@
+LINES in cone
+
+background (200);
+size (500, 500);
+
+int x1 = 20;
+int x2 = 400;
+while (x1 < 400) {
+  line (x1, 20, x2, 400);
+  x1 = (x1 + 5);
+  x2 = (x2 - 5);
+}
+
+
+RANDOM CIRCLES
+
+size (500, 500);
+background (250);
+
+  int x = 0;
+  int y = 0;
+  int a = 0;
+  int d = 0;
+  int f = 0;
+  int g = 0;
+  int t = 0;
+  while (t < 700) {
+    float r = random(500);
+    float r2 = random(500);
+    float r3 = random(50);
+    float r4 = random (500);
+    float r5 = random (400, 500);
+    noStroke();
+    colorMode(HSB, 500);
+    fill (d+r4, f+r5, g+r5);
+    ellipse (x+r, y+r2, a+r3, a+r3);
+    t = t+1;
+  }
+  
+  
+  DRAWING RANDOM CIRCLES
+  
+  void setup() {
+size (500, 500);
+background (250);
+}
+
+void draw() {
+  int t = 0;
+  while (t < 1) {
+    float r = random(500);
+    float r2 = random(500);
+    float r3 = random(50);
+    float r4 = random (500);
+    float r5 = random (400, 500);
+    noStroke();
+    colorMode(HSB, 500);
+    fill (r4, r5, r5);
+    ellipse (r, r2, r3, r3);
+    t = t+1;
+  }
+}
+
